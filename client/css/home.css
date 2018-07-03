@@ -36,3 +36,8 @@ img{
     font-size: 14px;
     color: #E9967A;
 }
+
+.blockButton{
+    width: 700px;
+    margin: -20px auto;
+}
