@@ -2,15 +2,17 @@
     "movies": [
         {
             "id": 1,
-            "title": "羞羞铁拳",
-            "data": "2017-xx-xx",
-            "director": "ifking"
+            "title": "芳华",
+            "data": "2017-12-15",
+            "img": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
+            "score": 7.7
         },
         {
             "id": 2,
-            "title": "芳华12",
-            "data": "2017-xx-xx",
-            "director": "ifking"
+            "title": "妖猫传",
+            "data": "2017-12-22",
+            "img": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2507024497.webp",
+            "score": 6.9
         }
     ]
 }
