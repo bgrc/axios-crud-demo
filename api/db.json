@@ -1,18 +1,28 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "芳华",
-            "data": "2017-12-15",
-            "img": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
-            "score": 7.7
-        },
-        {
-            "id": 2,
-            "title": "妖猫传",
-            "data": "2017-12-22",
-            "img": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2507024497.webp",
-            "score": 6.9
-        }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "芳华",
+      "img": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507227732.webp",
+      "director": "冯小刚",
+      "score": 7.7,
+      "date": "2017-12-15"
+    },
+    {
+      "id": 2,
+      "title": "妖猫传",
+      "img": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2507024497.webp",
+      "director": "陈凯歌",
+      "score": 6.9,
+      "date": "2017-12-22"
+    },
+    {
+      "title": "超人总动员2",
+      "img": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2522880251.webp",
+      "director": "布拉德·伯德",
+      "score": "8.1",
+      "date": "2018-06-22",
+      "id": 3
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+*{
+    margin: 0;padding: 0
+}
+
+.moviesRow{
+    background: #fff;
+    margin: 40px auto;
+    width: 700px;
+    height: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.formItem{
+    margin: 40px auto;
+    display: inline-block;
+}
+
+label{
+    font-weight: bold;
+    color: #666
+}
+
+body{
+    background-color: #eee;
+}

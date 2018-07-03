@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新增电影</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/addMovie.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="moviesRow">
+            <form class="formItem" action="http://localhost:3000/movies" method="post">
+                <div class="form-group row">
+                    <label class="col-xs-3 col-form-label">影名</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="title" placeholder="title">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-3 col-form-label">海报</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="img" placeholder="img">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-3 col-form-label">导演</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="director" placeholder="director">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-3 col-form-label">评分</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="score" placeholder="score">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-xs-3 col-form-label">日期</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" name="date" placeholder="date">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-3">
+                            <button type="reset" class="btn btn-info">清空</button>
+                    </div>
+                    <div class="col-sm-2">
+                            <button id="addButton" class="btn btn-success">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
