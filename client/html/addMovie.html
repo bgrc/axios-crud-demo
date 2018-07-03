@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>新增电影</title>
+    <script src="../js/addMovie.js"></script>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/addMovie.css">
 </head>
@@ -13,7 +15,7 @@
 <body>
     <div class="container">
         <div class="moviesRow">
-            <form class="formItem" action="http://localhost:3000/movies" method="post">
+            <form id="addMovie" class="formItem">
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">影名</label>
                     <div class="col-sm-10">
@@ -49,7 +51,7 @@
                     <div class="col-sm-3">
                             <button type="reset" class="btn btn-info">清空</button>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-4">
                             <button id="addButton" class="btn btn-success">提交</button>
                     </div>
                 </div>

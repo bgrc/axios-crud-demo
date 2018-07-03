@@ -3,24 +3,24 @@
 }
 
 img{
-    max-width: 100%;
+    width: 128px;
+    height: 178.72px;
 }
 
 #moviesRow{
     background: #fff;
     margin: 40px auto;
     width: 700px;
-    height: 250px;
+    height: auto;
     border: 1px solid #ddd;
 }
 
 .movieBox{
     text-align: center;
-    margin: 0 10px;
+    margin: 10px 10px;
     width: 150px;
     list-style-type: none;
-    float: left;
-    height: 100%
+    display: inline-block;    
 }
 
 .mPost img{
