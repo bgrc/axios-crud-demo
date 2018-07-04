@@ -48,7 +48,7 @@ window.onload = function () {
         axios.post('http://localhost:3000/movies', getMovieData())
             .then(function (response) {
                 if (response.data) {
-                    console.log("添加成功")
+                    alert("修改成功！")
                 }
             })
             .catch(function (error) {

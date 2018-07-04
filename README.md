@@ -15,3 +15,7 @@ $ json-server api/db.json --watch --prot 3000
 - [json-server](https://github.com/typicode/json-server) 用来模拟服务器 API
 
 - [axios](https://www.kancloud.cn/yunye/axios/234845) 用来从 js 中读取服务器 API
+
+### 演示
+
+![](./images/movie.gif)
