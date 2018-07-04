@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="https://xings.oss-cn-shanghai.aliyuncs.com/image/movie.png" /> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>新增电影</title>
     <script src="../js/addMovie.js"></script>
@@ -19,31 +20,31 @@
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">影名</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="title" placeholder="title">
+                        <input type="text" class="form-control" name="title" placeholder="title" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">海报</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="img" placeholder="img">
+                        <input type="url" class="form-control" name="img" placeholder="img" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">导演</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="director" placeholder="director">
+                        <input type="text" class="form-control" name="director" placeholder="director" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">评分</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="score" placeholder="score">
+                        <input type="text" class="form-control" name="score" placeholder="score" required>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-xs-3 col-form-label">日期</label>
                     <div class="col-sm-10">
-                        <input type="date" class="form-control" name="date" placeholder="date">
+                        <input type="date" class="form-control" name="date" placeholder="date" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -57,7 +58,7 @@
                 </div>
             </form>
         </div>
-        <div class="blockButton">
+        <div class="backButton">
                 <a href="../html/home.html"><button type="button" class="btn btn-primary btn-block">返回首页</button></a>
         </div>
     </div>

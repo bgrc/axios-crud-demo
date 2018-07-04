@@ -37,7 +37,17 @@ img{
     color: #E9967A;
 }
 
-.blockButton{
+.insertButton{
     width: 700px;
-    margin: -20px auto;
+    margin: -20px auto 0 auto;
+}
+
+.alertButton{
+    width: 700px;
+    margin: 10px auto;
+}
+
+.deleteButton{
+    width: 700px;
+    margin: 10px auto;
 }

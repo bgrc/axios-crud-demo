@@ -1,10 +1,11 @@
 window.onload = function () {
-    let addButton = document.getElementById("addButton")
     const form = document.getElementById("addMovie")
-    addButton.addEventListener('click', e => {
+    form.addEventListener('submit', e => {
         e.preventDefault()
-        const movieData = getMovieData("addMovie")
+
+        const movieData = getMovieData()
         console.log(movieData)
+
         axios.post('http://localhost:3000/movies', movieData)
             .then(function (response) {
                 if (response.data) {
@@ -15,11 +16,10 @@ window.onload = function () {
             .catch(function (error) {
                 console.log(error)
             })
-    }, false)
+    })
 
-    function getMovieData(formId) {
-        const form = document.getElementById(formId)
-        let tagElements = form.getElementsByTagName('input')
+    function getMovieData() {
+        let tagElements = document.getElementsByTagName('input')
         let movieData = {}
         for (let item of tagElements) {
             movieData[item.name] = item.value
