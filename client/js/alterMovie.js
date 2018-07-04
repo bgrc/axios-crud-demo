@@ -1,5 +1,6 @@
 window.onload = function () {
     let movies
+    let selectId
     axios.get('http://localhost:3000/movies')
         .then(function (response) {
             movies = response.data
@@ -17,7 +18,7 @@ window.onload = function () {
 
     let sellect = document.getElementById("mySelect");
     sellect.addEventListener('change', function (e) {
-        let selectId = e.target.value
+        selectId = e.target.value
 
         let formPlaceholder = document.getElementsByTagName('input')
         for (let movie of movies) {
@@ -30,5 +31,39 @@ window.onload = function () {
             }
         }
     }, false)
+
+    const alter = document.getElementById("alterMovie")
+    alter.addEventListener('submit', e => {
+        e.preventDefault()
+        axios.delete(`http://localhost:3000/movies/${selectId}`)
+            .then(function (response) {
+                if (response.status == 200) {
+                    console.log("删除成功！")
+                }
+            })
+            .catch(function (error) {
+                console.log(error)
+            })
+
+        axios.post('http://localhost:3000/movies', getMovieData())
+            .then(function (response) {
+                if (response.data) {
+                    console.log("添加成功")
+                }
+            })
+            .catch(function (error) {
+                console.log(error)
+            })
+
+        function getMovieData() {
+            let tagElements = document.getElementsByTagName('input')
+            let movieData = {}
+            for (let item of tagElements) {
+                movieData[item.name] = item.value
+            }
+            movieData['id'] = selectId
+            return movieData
+        }
+    })
 
 }
