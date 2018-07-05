@@ -1,4 +1,4 @@
-## axios + json-server 小练习
+## axios + json-server 小案例
 
 ### 演示
 
@@ -6,7 +6,7 @@
 
 ### 如何使用
 
-```
+```sh
 $ git clone https://github.com/ifkingx/small-movie-axios
 
 $ cd small-movie-axios
@@ -48,7 +48,7 @@ display: inline-block
 
 - axios + json-server 进行 CRUD 操作
 
-```
+```js
 axios.get('http://localhost:3000/movies')
     .then(function (response) {
         // 查询数据
@@ -62,7 +62,7 @@ axios.get('http://localhost:3000/movies')
     })
 ```
 
-```
+```js
 axios.delete(`http://localhost:3000/movies/${selectId}`)
     .then(function (response) {
         if (response.status == 200) {
@@ -75,7 +75,7 @@ axios.delete(`http://localhost:3000/movies/${selectId}`)
     })
 ```
 
-```
+```js
 axios.post('http://localhost:3000/movies', getMovieData())
     .then(function (response) {
         if (response.data) {
