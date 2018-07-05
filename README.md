@@ -44,6 +44,32 @@ display: inline-block
 }
 ```
 
+- bootstrap 带状态的下拉菜单组件写法和如何获取值
+
+```html
+<div class="form-group">
+    <select id="mySelect" class="custom-select" required>
+      <option value="">Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+</div>
+```
+
+```js
+let sellect = document.getElementById("mySelect");
+sellect.addEventListener('change', function (e) {
+    let selectId = e.target.value
+    console.log(`获取 option 的 value：${selectId}`)
+
+    let index = sellect.selectedIndex
+    let selectText = sellect.options[index].text;
+    console.log(`获取 option 的 text：${selectText}`)
+},false)
+```
+
 - 当有表单要提交的时候不能监听 `click` 事件，否则不论表单是否验证通过，下面的代码都会执行。需要监听 `submit` 事件，此时监听的 `id` 是表单 id 而不是按钮的
 
 - axios + json-server 进行 CRUD 操作
