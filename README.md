@@ -7,7 +7,7 @@
 ### 如何使用
 
 ```sh
-$ git clone https://github.com/ifkingx/small-movie-axios
+$ git clone https://github.com/bgrc/small-movie-axios.git
 
 $ cd small-movie-axios
 
@@ -26,7 +26,7 @@ $ json-server api/db.json --watch
 
 - [axios](https://www.kancloud.cn/yunye/axios/234845) 用来请求 API
 
-### Notes
+### 笔记
 
 - 如果父容器没给固定高度的话，多个字容器想要直接平铺在内是不行的，当超出宽度的时候会丢失父容器，可将子容器声明为行内块级元素
 
