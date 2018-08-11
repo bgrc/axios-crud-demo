@@ -1,4 +1,4 @@
-## axios + json-server 小案例
+## axios + json-server 小例子 （未使用 React）
 
 ### 演示
 
@@ -123,5 +123,3 @@ axios.post('http://localhost:3000/movies', getMovieData())
         return movieData
     }
 ```
-
-进行编辑操作可先删后增。
