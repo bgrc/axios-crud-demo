@@ -1,4 +1,4 @@
-## axios + json-server 小例子 （未使用 React）
+## axios + json-server 小例子 （未使用 DOM 框架库）
 
 ### 演示
 
